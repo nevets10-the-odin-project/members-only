@@ -1,24 +1,6 @@
-# README
+# Project: Members Only!
+https://www.theodinproject.com/lessons/ruby-on-rails-members-only#authentication-and-posts
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project demonstrates the use of the Devise gem, authentication, and authorization
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Anyone can view posts, however, only users can see the author or make posts of their own.
