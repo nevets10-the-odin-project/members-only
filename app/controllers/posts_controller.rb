@@ -6,8 +6,22 @@ class PostsController < ApplicationController
   end
 
   def create
+    @post = Post.new(post_params)
+    @post[:user_id] = current_user.id
+
+    if @post.save
+      redirect_to root_url
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def index
+  end
+
+  private
+
+  def post_params
+    params.expect(post: %i[title body])
   end
 end
