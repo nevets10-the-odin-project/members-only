@@ -3,6 +3,7 @@
 <% @posts.each do |post| %>
     <div>
         <h3><%= post.title %></h3>
+        <p>Author: <%= @users.find(post.user_id).username %></p>
         <p><%= post.body %></p>
     </div>
 <% end %>
